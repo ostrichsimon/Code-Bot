@@ -1,0 +1,53 @@
+# Secrets / Umgebung
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+*.egg-info/
+
+# Node / Frontend
+node_modules/
+dist/
+build/
+.vite/
+
+# Lokale Daten (nur README.md und .gitkeep werden versioniert)
+data/books/*
+!data/books/.gitkeep
+!data/books/README.md
+
+data/documents/*
+!data/documents/.gitkeep
+!data/documents/README.md
+
+data/processed/*
+!data/processed/.gitkeep
+!data/processed/README.md
+
+data/embeddings/*
+!data/embeddings/.gitkeep
+!data/embeddings/README.md
+
+data/chroma/*
+!data/chroma/.gitkeep
+!data/chroma/README.md
+
+# Dokument- und Datenbankdateien
+*.pdf
+*.epub
+*.docx
+*.sqlite
+*.db
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
