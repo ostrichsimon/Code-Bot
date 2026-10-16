@@ -1,0 +1,21 @@
+[project]
+name = "sap-rag-backend"
+version = "0.0.0"
+description = "Platzhalter-Grundgerüst des lokalen SAP-RAG-Chatbot-Backends (Phase 0)"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff"]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["app*"]
+
+[tool.ruff]
+line-length = 100

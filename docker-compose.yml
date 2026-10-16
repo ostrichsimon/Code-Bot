@@ -1,0 +1,19 @@
+# Platzhalter (Phase 0): Es werden bewusst KEINE Services gestartet.
+# Docker ist optional. Mögliche spätere Services (jeweils erst bei vorhandener Implementierung):
+#   - backend  (FastAPI)
+#   - frontend (Vite/React)
+#   - chroma   (falls Chroma als separater Server statt eingebettet genutzt wird)
+#   - qdrant   (Alternative zu Chroma, offen)
+#   - ollama   (alternativ zur lokalen Installation)
+#
+# services: {}
+#
+# Beispielskizze (auskommentiert, nicht lauffähig geprüft):
+# services:
+#   backend:
+#     build: ./backend
+#     env_file: .env
+#     volumes:
+#       - ./data:/app/data
+#   frontend:
+#     build: ./frontend
